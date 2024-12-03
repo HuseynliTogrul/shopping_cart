@@ -18,6 +18,9 @@ const Header = () => {
                     </div>
                 </Link>
                 <ul className='flex list-none items-center text-gray-800 font-semibold relative'>
+                    <Link to={"/heart"}>
+                        <li className='text-[25px] cursor-pointer hover:text-red-500'><FaRegHeart /></li>
+                    </Link>
                     <Link to={"/cart"}>
                         <li className='text-[25px] cursor-pointer hover:text-red-500'><TiShoppingCart /></li>
                     </Link>
@@ -28,9 +31,6 @@ const Header = () => {
                             </div>
                         )
                     }
-                    <Link to={"/heart"}>
-                        <li className='text-[25px] cursor-pointer hover:text-red-500'><FaRegHeart /></li>
-                    </Link>
                 </ul>
             </nav>
         </div>
